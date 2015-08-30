@@ -9,6 +9,47 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.navbar-logo {
+    display: block;
+  float: left;
+  height: 50px;
+  padding: 0;
+}
+.navbar-logo:hover,
+.navbar-logo:focus {
+  text-decoration: none;
+}
+.navbar-logo > img {
+    max-width: 95%;
+    padding: 5px 0;
+    margin: 0;
+}
+@media (min-width: 768px) {
+  .navbar > .container .navbar-logo,
+  .navbar > .container-fluid .navbar-logo {
+    max-width: 274px;
+  }
+}
+
+@media (max-width: 768px) {
+    .navbar-logo > img {
+        max-width: 90%;
+        padding: 5px 0 5px 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar > .container .navbar-logo,
+    .navbar > .container-fluid .navbar-logo {
+      max-width: 230px;
+    }
+
+    .navbar-logo > img {
+        max-width: 100%;
+        padding: 8px 0 8px 15px;
+    }
+}
+
 .text-muted {
     color: #777;
 }
@@ -295,7 +336,6 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
-/*header img {*/
 header .header-img {
   display: block;
   max-width: 60%;
@@ -326,7 +366,7 @@ header .header-img {
         font-weight: 700;
         line-height: 75px;
     }
-    
+
     header .header-img {
       padding-top: 80px;
     }
@@ -803,7 +843,7 @@ ul.social-buttons li a:active {
 
 ::selection {
     text-shadow: none;
-    background: #db0715; 
+    background: #db0715;
     /*background: #db0715;*/
 }
 
