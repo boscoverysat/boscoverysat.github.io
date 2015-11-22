@@ -9,6 +9,10 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .navbar-logo {
     display: block;
   float: left;
@@ -24,6 +28,11 @@ body {
     padding: 5px 0;
     margin: 0;
 }
+
+.app-button {
+    margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .navbar > .container .navbar-logo,
   .navbar > .container-fluid .navbar-logo {
@@ -649,6 +658,10 @@ section h3.section-subheading {
         margin-left: -75px;
     }
 
+    .timeline-image .portfolio-link {
+        margin-top: 20px;
+    }
+
     .timeline>li .timeline-image h4 {
         margin-top: 30px;
         font-size: 18px;
@@ -673,6 +686,10 @@ section h3.section-subheading {
         width: 170px;
         height: 170px;
         margin-left: -85px;
+    }
+
+    .timeline-image .portfolio-link {
+        margin-top: 20px;
     }
 
     .timeline>li .timeline-image h4 {
@@ -776,7 +793,14 @@ ul.social-buttons li a:active {
     font-size: 3em;
 }
 
+.portfolio-modal .modal-content h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
 .portfolio-modal .modal-content p {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -793,7 +817,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    margin-bottom: 3px;
 }
 
 .portfolio-modal .close-modal {
